@@ -218,10 +218,6 @@ export default class WalletsAdd extends Component {
               }}
               style={styles.button}
             />
-            <View style={styles.or}>
-              <BlueTextCentered style={styles.orCenter}>{loc.wallets.add_or}</BlueTextCentered>
-            </View>
-
           </View>
 
           <View style={styles.advanced}>
