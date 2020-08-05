@@ -1,1 +1,1 @@
-BlueWallet - Bitcoin wallet
+AppWallet - Litecoin-PoS wallet

@@ -954,7 +954,7 @@ export class AbstractHDElectrumWallet extends AbstractHDWallet {
   }
 
   /**
-   * Creates Segwit Bech32 Bitcoin address
+   * Creates Segwit Bech32 Litecoin-PoS address
    *
    * @param hdNode
    * @returns {String}

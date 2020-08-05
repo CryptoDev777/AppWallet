@@ -128,7 +128,7 @@ describe('HodlHodl API', function () {
     );
 
     assert.ok(offers[0]);
-    assert.ok(offers[0].asset_code === 'BTC');
+    assert.ok(offers[0].asset_code === 'LTCP');
     assert.ok(offers[0].country_code);
     assert.ok(offers[0].side === HodlHodlApi.FILTERS_SIDE_VALUE_SELL);
     assert.ok(typeof offers[0].title !== 'undefined', JSON.stringify(offers[0], null, 2));

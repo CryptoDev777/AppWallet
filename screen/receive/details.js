@@ -338,7 +338,7 @@ const ReceiveDetails = () => {
       <StatusBar barStyle="light-content" />
       {isHandOffUseEnabled && address !== undefined && showAddress && (
         <Handoff
-          title={`Bitcoin Transaction ${address}`}
+          title={`Litecoin-PoS Transaction ${address}`}
           type="io.bluewallet.bluewallet"
           url={`https://blockstream.info/address/${address}`}
         />
