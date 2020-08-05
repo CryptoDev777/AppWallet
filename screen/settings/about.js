@@ -149,7 +149,7 @@ const About = () => {
             <BlueTextCentered>{loc.settings.about_awesome} 👍</BlueTextCentered>
             <BlueSpacing20 />
             <BlueTextCentered>React Native</BlueTextCentered>
-            <BlueTextCentered>litecoinposjs-lib</BlueTextCentered>
+            <BlueTextCentered>bitcoinjs-lib</BlueTextCentered>
             <BlueTextCentered>Nodejs</BlueTextCentered>
             <BlueTextCentered>Electrum server</BlueTextCentered>
           </View>
