@@ -25,7 +25,7 @@
     "name": "JP Richardson"
   },
   "bugs": {
-    "url": "https://github.com/bitcoinjs/bip38/issues"
+    "url": "https://github.com/litecoinposjs/bip38/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -57,7 +57,7 @@
   "main": "index.js",
   "name": "bip38",
   "repository": {
-    "url": "git+ssh://git@github.com/bitcoinjs/bip38.git",
+    "url": "git+ssh://git@github.com/litecoinposjs/bip38.git",
     "type": "git"
   },
   "scripts": {

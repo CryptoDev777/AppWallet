@@ -1,7 +1,7 @@
 import bip39 from 'bip39';
 import b58 from 'bs58check';
 import { AbstractHDElectrumWallet } from './abstract-hd-electrum-wallet';
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('litecoinposjs-lib');
 const HDNode = require('bip32');
 
 /**
@@ -85,7 +85,7 @@ export class HDSegwitP2SHWallet extends AbstractHDElectrumWallet {
     const child = root.derivePath(path).neutered();
     const xpub = child.toBase58();
 
-    // bitcoinjs does not support ypub yet, so we just convert it from xpub
+    // litecoinposjs does not support ypub yet, so we just convert it from xpub
     let data = b58.decode(xpub);
     data = data.slice(4);
     data = Buffer.concat([Buffer.from('049d7cb2', 'hex'), data]);

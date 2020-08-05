@@ -3,7 +3,7 @@ import BigNumber from 'bignumber.js';
 import b58 from 'bs58check';
 import { randomBytes } from '../rng';
 import { AbstractHDWallet } from './abstract-hd-wallet';
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('litecoinposjs-lib');
 const BlueElectrum = require('../../blue_modules/BlueElectrum');
 const HDNode = require('bip32');
 const coinSelectAccumulative = require('coinselect/accumulative');
@@ -197,7 +197,7 @@ export class AbstractHDElectrumWallet extends AbstractHDWallet {
     const child = root.derivePath(path).neutered();
     const xpub = child.toBase58();
 
-    // bitcoinjs does not support zpub yet, so we just convert it from xpub
+    // litecoinposjs does not support zpub yet, so we just convert it from xpub
     let data = b58.decode(xpub);
     data = data.slice(4);
     data = Buffer.concat([Buffer.from('04b24746', 'hex'), data]);

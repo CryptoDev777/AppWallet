@@ -213,7 +213,7 @@ async function decryptECMult (buffer, passphrase, progressCallback, scryptParams
   // d = passFactor * factorB (mod n)
   var d = passInt.multiply(factorB).mod(curve.n)
 
-  // added by overtorment: see https://github.com/bitcoinjs/bip38/issues/60
+  // added by overtorment: see https://github.com/litecoinposjs/bip38/issues/60
   // verify salt matches address
   var address = getAddress(d, compressed)
   var checksum = hash256(address).slice(0, 4)
