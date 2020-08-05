@@ -18,7 +18,6 @@ import {
   BlueTextCentered,
   BlueText,
   BlueListItem,
-  LightningButton,
   BitcoinButton,
   BlueFormLabel,
   BlueButton,

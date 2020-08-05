@@ -164,38 +164,7 @@ export class BitcoinButton extends Component {
   }
 }
 
-export class LightningButton extends Component {
-  render() {
-    return (
-      <TouchableOpacity
-        onPress={() => {
-          if (this.props.onPress) this.props.onPress();
-        }}
-      >
-        <View
-          style={{
-            borderColor: BlueCurrentTheme.colors.lnborderColor,
-            borderWidth: 1,
-            borderRadius: 5,
-            backgroundColor: (this.props.active && BlueCurrentTheme.colors.lnbackgroundColor) || BlueCurrentTheme.colors.brandingColor,
-            minWidth: this.props.style.width,
-            minHeight: this.props.style.height,
-            height: this.props.style.height,
-            flex: 1,
-          }}
-        >
-          <View style={{ marginTop: 16, marginLeft: 16, marginBottom: 16 }}>
-            <Text style={{ color: BlueCurrentTheme.colors.lnborderColor, fontWeight: 'bold' }}>{loc.wallets.add_lightning}</Text>
-          </View>
-          <Image
-            style={{ width: 34, height: 34, marginRight: 8, marginBottom: 8, justifyContent: 'flex-end', alignSelf: 'flex-end' }}
-            source={require('./img/addWallet/lightning.png')}
-          />
-        </View>
-      </TouchableOpacity>
-    );
-  }
-}
+
 
 export class BlueWalletNavigationHeader extends Component {
   static propTypes = {
