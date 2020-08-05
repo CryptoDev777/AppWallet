@@ -302,9 +302,8 @@ export default class WalletsList extends Component {
 
   renderLocalTrader = () => {
     if (BlueApp.getWallets().length > 0 && !BlueApp.getWallets().some(wallet => wallet.type === PlaceholderWallet.type)) {
-      return (
-        
-      );
+      return null;
+
     } else {
       return null;
     }
