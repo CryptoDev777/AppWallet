@@ -1,6 +1,6 @@
 /* global it, describe */
 import { LegacyWallet } from '../../class';
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('litecoinposjs-lib');
 const assert = require('assert');
 
 describe('Legacy wallet', () => {
